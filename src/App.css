@@ -1,0 +1,243 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+.App {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 0.7vw;
+  background: #100d20;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #ba09b8);
+  border-radius: 20px;
+}
+
+/* Header section  */
+.header {
+  background-image: url(/public/images/header-bg.png);
+  background-position: center top;
+  /* box-shadow: inset 0px 150px 0px 0px rgba(0, 0, 0, 0.5); */
+  position: relative;
+  z-index: 0;
+}
+.header::after{
+  content: "";
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0) 100%);
+ z-index: -1;
+}
+.shadow-rectangle {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #140b1c 100%);
+}
+
+/* Navbar section  */
+
+.navbar-button {
+  background: linear-gradient(90deg, #ba09b8 -7.45%, #01d998 107.02%);
+}
+.navbar-button:hover {
+  background: linear-gradient(90deg, #01d998 -7.45%, #ba09b8 107.02%);
+}
+
+/* Header content  */
+
+.header-button {
+  background: linear-gradient(90deg, #ba09b8 -7.45%, #01d998 107.02%);
+}
+.header-button:hover {
+  background: linear-gradient(90deg, #01d998 -7.45%, #ba09b8 107.02%);
+}
+
+/* header content schedule  */
+.schedule-content {
+  border: 2px solid rgba(255, 255, 255, 0.11);
+  background: rgba(38, 31, 48, 0.6);
+  box-shadow: 8px 5px 21px 18px rgba(0, 0, 0, 0.39);
+}
+
+.schedule-title {
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.schedule-description {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.content-section1 {
+  background: linear-gradient(
+    180deg,
+    rgba(152, 88, 217, 0) 0%,
+    rgba(152, 88, 217, 0.81) 38.38%,
+    rgba(152, 88, 217, 0.83) 46.63%,
+    rgba(152, 88, 217, 0.74) 56.49%,
+    rgba(152, 88, 217, 0) 100%
+  );
+  background-color: #150c1e;
+}
+
+.clock-day {
+  /* text-shadow: 0px 4px 23.2px #b50c5e; */
+  color: #351e4c;
+  display: flex;
+  background-size: 200% 200%;
+  background: linear-gradient(to left, #01d998, #ba09b8);
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+@media screen and (max-width: 400px) {
+  .counter {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .clock-day {
+    -webkit-text-stroke: 2px transparent;
+  }
+}
+
+.oradoras-card-1 {
+  border-radius: 100px 0px;
+  border: 5px solid #02d1ae;
+  /* background: linear-gradient(to bottom, #02D1AE 50%, #BA09B8 50%); */
+  /* background-color: linear-gradient(180deg, #6F4EF7 0%, #6F4EF7 52.31%, #042118 100%); */
+  /* background-image: url('../public//images/oradoras-card1.png'); */
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #6f4ef7 0%, #6f4ef7 52.31%, #042118 100%);
+  overflow: hidden;
+}
+.ordoras-btn {
+  border-radius: 50px;
+  background: linear-gradient(90deg, #ba09b8 -7.45%, #01d998 107.02%);
+}
+.ordoras-btn:hover {
+  background: linear-gradient(90deg, #01d998 -7.45%, #ba09b8 107.02%);
+}
+
+.ordoras-card-1-rectangle {
+  width: 100%;
+  height: 78px;
+  background: linear-gradient(180deg, rgba(88, 68, 200, 0) 0%, #483da6 100%);
+}
+.banner {
+  /* opacity: 0.7; */
+  background-color: #14171d;
+  background-size: cover;
+  background-image: url("/public/images/banner-bg.png"),
+    linear-gradient(89deg, #990d97bc 13.89%, rgba(1, 217, 152, 0.282) 97.61%);
+}
+.banner-btn {
+  background: linear-gradient(90deg, #ba09b8 -7.45%, #01d998 107.02%);
+}
+.banner-btn:hover {
+  background: linear-gradient(90deg, #01d998 -7.45%, #ba09b8 107.02%);
+}
+.topics {
+  background: #140b1c;
+}
+.speaker1-rect {
+  position: relative;
+}
+.speaker1-rect::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px !important;
+  padding: 6px;
+  background-color: transparent;
+  background: linear-gradient(
+    90deg,
+    #ba09b8 10%,
+    #02d1ae 20%,
+    rgba(30, 28, 44, 0) 90%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.banner2 {
+  /* background-color:#914dd7 ; */
+  opacity: 0.8;
+  background: linear-gradient(
+      90deg,
+      #500f91 10%,                    /* Your main color */
+        rgba(20, 24, 30, 0) 100.33%,   /* Transparent color */
+        #500f91 90.67%,                /* Your main color again */
+        #14181E 10%  
+    ),
+    url("/public/images/banner2-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.banner-thumb-div {
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ba09b8 -7.45%, #01d998 107.02%);
+}
+.banner-thumb-img-div {
+  background: url("/public/images/banner2-thumb.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.play-btn-div {
+  width: 168px;
+  height: 168px;
+  border-radius: 84px;
+  background: rgba(217, 217, 217, 0.1);
+}
+.play-btn-link {
+  padding: 13.5px 11.5px 13.5px 15.5px;
+  border-radius: 31px;
+  background: #fff;
+  height: 62px;
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.09),
+    0px 12px 13px 0px rgba(0, 0, 0, 0.17), 0px 4px 6px 0px rgba(0, 0, 0, 0.12),
+    0px -12px 30px 0px rgba(0, 0, 0, 0.12),
+    0px 54px 55px 0px rgba(0, 0, 0, 0.25);
+}
+.footer {
+  background: url("/public/images/footer-bg.png"), lightgray 0px 174.19px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.input1 {
+  display: inline-flex;
+  color: white;
+  background-color: rgba(230, 230, 230, 0.11);
+}
+.input3 {
+  color: white;
+  background-color: rgba(230, 230, 230, 0.11);
+}
+.input1::placeholder {
+  color: white;
+}
+.input3::placeholder {
+  color: white;
+}
+.sub-input {
+  border-radius: 110px;
+  background: rgba(230, 230, 230, 0.11);
+}
+.sub-input::placeholder {
+  color: white;
+}
+.sub-btn {
+  border-radius: 0px 110px 110px 0px;
+  background: linear-gradient(90deg, #ba09b8 -7.45%, #01d998 107.02%);
+}
+.sub-btn:hover {
+  background: linear-gradient(90deg, #01d998 -7.45%, #ba09b8 107.02%);
+}
